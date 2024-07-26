@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rags",
+  "info": {
+    "singularName": "rag",
+    "pluralName": "rags",
+    "displayName": "rag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "actionsTaken": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "day": {
+      "type": "string"
+    },
+    "goalsmet": {
+      "type": "string"
+    },
+    "observations": {
+      "type": "string"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact.contact",
+      "inversedBy": "rags"
+    }
+  }
+}

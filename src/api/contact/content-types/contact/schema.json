@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "contact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "position": {
+      "type": "string"
+    },
+    "departmentName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "employeeSignature": {
+      "type": "string"
+    },
+    "evaluationProcess": {
+      "type": "text"
+    },
+    "improvementPlan": {
+      "type": "text"
+    },
+    "manager": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "biginteger"
+    },
+    "reportingGroup": {
+      "type": "string"
+    },
+    "reportingManagerSignature": {
+      "type": "string"
+    },
+    "empName": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "empName"
+    },
+    "resourceManagerSignature": {
+      "type": "string"
+    },
+    "rmgName": {
+      "type": "string"
+    },
+    "rags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rag.rag",
+      "mappedBy": "employee"
+    },
+    "ragData": {
+      "type": "json"
+    },
+    "skill": {
+      "type": "json"
+    },
+    "grade": {
+      "type": "json"
+    }
+  }
+}
